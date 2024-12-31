@@ -20,3 +20,18 @@ form.addEventListener('submit', function (e) {
     alert('Thank you for reaching out! I will get back to you soon.');
     form.reset();
 });
+
+function expandImage(img) {
+    const modal = document.getElementById("imageModal");
+    const expandedImg = document.getElementById("expandedImg");
+    expandedImg.src = img.src;
+    modal.style.display = "flex";
+}
+
+function closeModal(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target === modal || event.target.classList.contains("close-btn")) {
+        modal.style.display = "none";
+    }
+}
+

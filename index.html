@@ -43,11 +43,13 @@
         
         <h2>About Me</h2>
         <p>
-        <pre>I attended my primary school at Sabon Gida Ringim (2005–2011), 
+        <pre><del>
+            I attended my primary school at Sabon Gida Ringim (2005–2011), 
             and then I moved to JSS Galadanchi (2011–2013). Later, I joined 
             Dutse Model for my junior and senior secondary education (2013–2017).
              I re-wrote my NECO SSCE at Gwale College of Arabic and Secondary School (2017–2018).
               After that, I completed my diploma in Informatics at Kazaure (2018–2020).
+        </del>
                Subsequently, I joined FUD through Direct Entry (2022) and continued my education.</pre></p>
                <br>
                <pre><p>"I have a deep interest in software development, with a focus on web technologies.
@@ -103,22 +105,26 @@
        
     </ul>
 </section>
-
 <section id="certificates">
     <div class="certifications-section">
         <h1 class="certifications-title">Certifications</h1>
         <div class="certifications-grid">
-            <img src="img/Ai foun Abdu GL certifi.JPG" alt="">
-            <img src="img/AiB abdu HP certifi.JPG" alt="">
-            <img src="img/ando  abdu GT  certifi.JPG" alt="">
-            <img src="img/FlutterB abdu GL certifi.JPG" alt="">
-            <img src="img/java abdu GL certifi.JPG" alt="">
-            <img src="img/UiUxB abdu GL certifi.JPG" alt="">
-            <img src="img/progBs abdu GL certifi.JPG" alt="">
-            <img src="img/Responsive Abdu Cert.JPG" alt="">
+            <img src="img/Ai foun Abdu GL certifi.JPG" alt="Certificate 1" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/AiB abdu HP certifi.JPG" alt="Certificate 2" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/ando  abdu GT  certifi.JPG" alt="Certificate 3" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/FlutterB abdu GL certifi.JPG" alt="Certificate 4" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/java abdu GL certifi.JPG" alt="Certificate 5" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/UiUxB abdu GL certifi.JPG" alt="Certificate 6" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/progBs abdu GL certifi.JPG" alt="Certificate 7" class="thumbnail" onclick="expandImage(this)">
+            <img src="img/Responsive Abdu Cert.JPG" alt="Certificate 8" class="thumbnail" onclick="expandImage(this)">
         </div>
     </div>
     
+     <!-- Modal for expanded image -->
+     <div id="imageModal" class="modal" onclick="closeModal(event)">
+        <span class="close-btn" onclick="closeModal(event)">×</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
       
 </section>
 
